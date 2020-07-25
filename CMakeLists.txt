@@ -7,9 +7,9 @@ conan_basic_setup()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 set(SOURCES 
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/file_helpers.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sirds_generator.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/file_aux.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
