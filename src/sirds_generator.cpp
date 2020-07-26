@@ -70,6 +70,6 @@ cv::Mat SirdsGenerator::Generate() {
   return output;
 }
 
-double SirdsGenerator::Separation(double depth) {
+double SirdsGenerator::Separation(double depth) const {
   return round((1 - mu_ * depth) * eye_separation_ / (2 - mu_ * depth));
 }

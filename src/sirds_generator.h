@@ -7,9 +7,9 @@ namespace stereogram {
 
 class SirdsGenerator : public Generator {
  public:
-  SirdsGenerator(cv::Mat depth_map, int dpi);
+  explicit SirdsGenerator(cv::Mat depth_map, int dpi);
 
-  cv::Mat Generate();
+  cv::Mat Generate() override;
 
  private:
   cv::Mat depth_map_;
@@ -17,7 +17,7 @@ class SirdsGenerator : public Generator {
   double eye_separation_;
   const double mu_ = 1 / 3.0;
 
-  double Separation(double depth);
+  double Separation(double depth) const;
 };
 
 }  // namespace stereogram

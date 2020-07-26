@@ -11,7 +11,7 @@ class Generator {
   /**
    * Generates single image stereogram.
    */
-  cv::Mat Generate();
+  virtual cv::Mat Generate() = 0;
 };
 
 }  // namespace stereogram
