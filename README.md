@@ -1,6 +1,4 @@
-# stereogram
-
-Simple generator of Single Image Random Dot Stereograms (SIRDS).
+# Simple generator of Single Image Random Dot Stereograms (SIRDS).
 
 Based on an included paper - "Displaying 3D Images: Algorithms for Single Image Random Dot Stereograms" by Harold W. Thimbleby, Stuart Inglis, and Ian H. Witten.
 
